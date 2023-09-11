@@ -8,77 +8,54 @@
 </head>
 
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
-
-
-/* Establece un tamaño de fuente base */
-html {
-    font-size: 16px;
-}
-
-/* Utiliza unidades relativas para hacer que los elementos se ajusten a diferentes tamaños de pantalla */
-body {
-        background-image: url('https://www.bikashnews.com/wp-content/uploads/2021/08/banks1.jpg');
-    
-    font-size: 1rem; /* Utiliza rem para el tamaño de fuente */
-    background-size: cover;
-}
-
-.container {
-    max-width: 100%;
-    padding: 1rem; /* Añade un poco de espacio alrededor del contenido */
-    box-sizing: border-box;
-    height: auto; /* No establezcas una altura fija, permite que se ajuste automáticamente */
-}
-
-.navigation {
-    width: 100%;
-    padding: 1rem;
-}
-
-/* Ajusta el tamaño de la tabla para que se ajuste a la pantalla */
-table {
-    width: 100%;
-    font-size: 1rem;
-}
-
-/* Hace que los encabezados de tabla sean más legibles en pantallas pequeñas */
-th, td {
-    padding: 0.5rem;
-}
-
-/* Añade un margen inferior a los títulos */
-h1, h2 {
-    margin-bottom: 0.5rem;
-}
-
-/* Hace que los iconos sean más pequeños en pantallas pequeñas */
-i.fas {
-    font-size: 1rem;
-}
-
-/* Hace que el título de usuario sea más pequeño en pantallas pequeñas */
-h2 {
-    font-size: 1rem;
-}
-
-
-    
+   
 
     * {
         font-family: "Bell MT";
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
     }
+
+    /* Ajusta el tamaño de la fuente para dispositivos móviles */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* Disminuye el tamaño de la fuente en pantallas pequeñas */
+    }
+    h1 {
+        font-size: 24px; /* Ajusta el tamaño del título principal */
+    }
+    h2 {
+        font-size: 18px; /* Ajusta el tamaño del título secundario */
+    }
+    table {
+        font-size: 14px; /* Ajusta el tamaño de la fuente de la tabla */
+    }
+    i.fas {
+        font-size: 14px; /* Ajusta el tamaño de los iconos */
+    }
+}
+/* Ajusta el fondo de la página para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        background-image: none; /* Elimina la imagen de fondo en pantallas pequeñas */
+        background-color: #fff; /* Establece un fondo blanco en su lugar */
+    }
+}
+/* Ajusta el tamaño y espaciado de la tabla para dispositivos móviles */
+@media (max-width: 768px) {
+    table {
+        width: 100%; /* Utiliza el 100% del ancho de la pantalla */
+        margin: 0; /* Elimina el margen de la tabla */
+    }
+    th, td {
+        padding: 0.3rem; /* Reduzca el espaciado de las celdas de la tabla */
+    }
+}
+
 
   
 
    
 
-    table{
-        width: 480px;
-    }
+
 
 </style>
 
